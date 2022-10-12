@@ -6,12 +6,11 @@
 - Pnpm: v7
 
 1. Run `pnpm install` to download package
-2. Run `pnpm prisma:generate` to generate interface database
-3. Run `pnpm run start:dev` for debug and implement features
+2. Run `pnpm run start:dev` for debug and implement features
 
 ## Swagger
 
-- http
+- http://localhost:3333/documentation/v1
 
 ## Trick and Best practice
 

@@ -100,8 +100,8 @@ export class AirtableService {
       params,
     );
     return records.map(({ fields, id }) => {
-      if (fields.calendar_internal && fields.calendar_interval_unit) {
-        fields.endDate = rangeTime(fields.calendar_interval_unit, startDate, parseInt(fields.calendar_internal, 10));
+      if (fields.calendar_interval && fields.calendar_interval_unit) {
+        fields.endDate = rangeTime(fields.calendar_interval_unit, startDate, parseInt(fields.calendar_interval, 10));
       } else if (fields.running_hours_interval) {
         fields.endDate = rangeTime('hour', startDate, parseInt(fields.running_hours_interval, 10));
       } else {
